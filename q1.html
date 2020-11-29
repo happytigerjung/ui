@@ -66,7 +66,12 @@
             width: 25%;
         }
 
-        @media (max-width: 576px){
+
+        /* 미디어 쿼리 : css3 버전에서 새로 도입된 기술 */
+        /* 화면의 크기에 따라서 css 속성을 변경할 수 있는 기술 */
+        /* 화면의 크기가 최대 576px 까지는 아래의 속성을 적용 한다는 뜻 */
+        /* 그 이상은 위의 css 속성을 적용 */
+        @media screen and (max-width: 576px){
             .boxa{width: 100%;}
             .boxb{width: 100%;}
             .boxc{width: 100%;}
