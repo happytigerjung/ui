@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3scss</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        *{box-sizing: border-box;
+          margin:0;
+          padding: 0;
+        }
+        .box1, .box2, .box3{
+            float: left;
+            text-align: center;
+            /* border: 1px solid black; */
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin: 2px;
+            background-color: white;
+            width: 33%;
+        }
+
+        .box1:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        /* .main:hover{
+            box-shadow: 0 0 10px #ffffff;
+            
+        } */
+        .btn{
+            background-color:yellowgreen;
+            padding: 10px;
+        }
+        .div1{
+            font-weight: normal;
+            background-color: black;
+            font-size: 36px;
+        }
+        .div2{
+            background-color: yellowgreen;
+            font-size: 36px;
+        }
+        .div3{
+            background-color: black;
+            font-size: 36px;
+        }
+        .div{
+            /* border-left: 1px solid gray; */
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+        .divfoot{
+            background-color: lightgray;
+            padding: 20px;
+        }
+        main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        @media screen and (max-width: 576px){
+            .box1{width: 100%;}
+            .box2{width: 100%;}
+            .box3{width: 100%;}
+        }
+        .btn:hover{
+            /* cursor 마우스 포인트 속성 */
+            cursor: pointer;
+            background-color: gray;
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Responsive Pricing Table</h1>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="box1">
+                <div class="div1" style="color: white;">Basic</div>
+                <div class="div"><b>10GB</b> Storage</div>
+                <div class="div"><b>10</b> Emails</div>
+                <div class="div"><b>10</b> Domains</div>
+                <div class="div"><b>Endless</b> Support</div>
+                <div class="div"><b style="font-size: 53px;">$ 10</b><br>per month</div>
+                <div class="divfoot"><button class="btn">Sign Up</button></div>
+            </div>
+
+            <div class="box2">
+                <div class="div2">Pro</div>
+                <div class="div"><b>25GB</b> Storage</div>
+                <div class="div"><b>25</b> Emails</div>
+                <div class="div"><b>25</b> Domains</div>
+                <div class="div"><b>Endless</b> Support</div>
+                <div class="div"><b style="font-size: 53px;">$ 25</b><br>per month</div>
+                <div class="divfoot"><button class="btn">Sign Up</button></div>
+            </div>
+
+            <div class="box3">
+                <div class="div3" style="color: white;">Premium</div>
+                <div class="div"><b>50GB</b> Storage</div>
+                <div class="div"><b>50</b> Emails</div>
+                <div class="div"><b>50</b> Domains</div>
+                <div class="div"><b>Endless</b> Support</div>
+                <div class="div"><b style="font-size: 53px;">$ 50</b><br>per month</div>
+                <div class="divfoot"><button class="btn">Sign Up</button></div>
+            </div>
+        </div>
+    </main>
+   
+    
+    
+</body>
+</html>
