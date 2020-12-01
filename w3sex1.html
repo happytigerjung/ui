@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3s ex</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            background-color: rgb(105, 206, 105);
+            color: white;
+            border: 0px solid white;
+            padding: 3px 6px;
+            margin: 10px;
+        }
+        .head{
+            margin: 0px;
+        }
+        .top{
+            background-color: white;
+            padding: 8px 18px;
+        }
+
+        .top::after{
+            content:"";
+            display: table;
+            clear: both;
+
+        }
+        .toplogo{
+            float: left;
+            width: 50%;
+        }
+        .toptext{
+            float: right;
+        }
+        .low{
+            background-color: rgb(105, 206, 105);
+            padding: 0px;
+        }
+        
+        .low::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+        .lowdiv{
+            color: white;
+            float: left;
+            margin: 0px;
+            padding: 20px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .lowdiv:hover{
+            background-color: white;
+            color: black;
+        }
+        
+        .side{
+            padding-right: 100px;
+            float: left;
+        }
+        .sidetext{
+            padding: 8px;
+            padding-right: 100px;
+            border: 1px none white;
+        }
+        .sidetext:hover{
+            background-color: lightgray;
+        }
+        button:hover{
+            background-color: white;
+        }
+        section{
+            float: right;
+            width: 80%;
+        }
+        h1{
+            font-size: 60px;
+        }
+        h1, h3{
+            margin: 10px;
+        }
+        .mainbox{
+            background-color: rgb(247, 244, 244);
+            /* border: 5px gray; */
+            margin: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }   
+        .codebox{
+            background-color: white;
+            padding: 10px 300px;
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="top">
+                <div class="toplogo">
+                    <img src="./images/w3schools.png" alt="">
+                </div>
+                <div class="toptext">
+                    <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+                </div>
+            </div>
+            <div class="low">
+                    <div class="lowdiv">
+                        <a href="">TUTORIALS</a>
+                    </div>
+                    <div class="lowdiv">
+                        <a href="">REFERENCES</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="side">
+            <h3>Tutorials</h3>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/html/default.asp">Learn HTML</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/w3css/default.asp">Learn W3 CSS</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/colors/default.asp">Learn Colors</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/js/default.asp">Learn JavaScript</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/xml/default.asp">Learn XML</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/sql/default.asp">Learn SQL</a>
+            </div>
+            <div class="sidetext">
+                <a href="https://www.w3schools.com/php/default.asp">Learn PHP</a>
+            </div>
+        </div>
+        <section>
+            <div class="mainbox">
+                <h1>CSS</h1>
+                <h3>The Language for Styling Web Pages</h3>
+                <button>LEARN CSS</button>
+                <button>CSS REFERENCE</button>
+                <div class="codebox">
+                    <P>
+                        body {
+                            background-color: #d0e4fe;
+                        }
+                        h1 {
+                            color: orange;
+                            text-align: center;
+                        }
+                        p {
+                            font-family: "Times New Roman";
+                            font-size: 20px;
+                        }
+                    </P>
+                </div>
+                <button>Try it Yourself</button>
+            </div>
+            <div class="mainbox">
+                <h1>JS</h1>
+                <h3>The Language for Programing Web pages</h3>
+                <button>LEARN JS</button>
+                <button>JS REFERENCE</button>
+                <div class="codebox">
+                    <p>
+                        // Click the button to change the color of this paragraph
+
+                        function myFunction() {
+                            var x;
+                            x = document.getElementById("demo");
+                            x.style.fontSize = "25px";
+                            x.style.color = "red";
+                        }
+                    </p>
+                </div>
+                <button>Try it Yourself</button>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

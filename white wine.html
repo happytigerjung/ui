@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>white wine</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         *{
@@ -24,14 +26,17 @@
             border: 5px;
             padding-left: 0px;
             padding-top: 0px;
+            /* font-weight: bold=700하고 같고 nomal=400과 같음 */
+            font-weight: normal;
         }
         h3{
             padding: 10px;
             
         }
         .body{
-            padding: 10px;
+            padding: 0px 10px;
             float: left;
+            
         }
         .tablebody{
             border: 0px solid gray;
@@ -45,31 +50,62 @@
             display: block;
             clear: both;
         }
+        /* dic.pic는 태그 선택자로 태그명이 div면서 클래스 명이 pic인 태그를
+        선택한것 칸을 띄우지 않음 */
+
+        /* div.pic 면서 직계 자손인 img인 테그에 넓이를 100%로 줌 */
+        div.pic, div.pic > img{width: 100%;}
+
+        /* div면서 into클래스 안에 h2태그에 마진을10px을 줌 */
+
+        div.into h2{
+            margin: 10px;
+        }
+        div.tablebody table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        /* nth-child() 주로 표 사용시 짝수 혹은 홀수별로 선택하기 위한 선택자
+        (odd)홀수, (even)짝수 */
+        .tablebody tr:nth-child(even){
+            background-color: lightcyan;
+        }
 
 
 
     </style>
 </head>
 <body>
-    <header class="header">
+    <header>
+        <div class="header">
         <h1>White Wines-Chardonnay</h1>
-        <p style="color: white; padding-left: 0px ;">&lt;&lt;</p>
+        <!-- nav -->
+        <nav class="gg">
+        <div>
+        <a href="./wite wine.html"><p style="color: white; padding-left: 0px ;">
+        <i class="fa fa-angle-double-left"></i></p></a>
+        </div>
+        </nav>
+        </div>
     </header>
 
     <body>
         <div class="boxmain">
             <div class="body">
-                <img src="./images/팽수1.jpg" alt="">
+                <img src="./images/img_5terre2.jpg">
             </div>
             <div class="body">
                 <h3>Chardonnay</h3>
                 <p>석가는 뜨고, 트고, 실로 인간의 말이다. <br>
                     힘차게 피는 이상은 이상의 커다란  <br>
                     그러므로 동산에는 열매를 칼 <br>
-                    이다. 우리 원대하고, 뭇 불어 곳이 이상은 과실이 말이다. <br>
+                    이다. 우리 원대하고, 뭇 불어 곳이 <br>
+                    이상은 과실이 말이다. <br>
     
-                    불어 쓸쓸한 현저하게 얼음이 우리 어디 것이다. 심장의 아니더면, <br>
-                    풀밭에 시들어 사랑의 구하기 대고, 사막이다. 내는 바이며,  <br>
+                    불어 쓸쓸한 현저하게 얼음이 우리 <br>
+                    어디 것이다. 심장의 아니더면, <br>
+                    풀밭에 시들어 사랑의 구하기 대고, <br>
+                    사막이다. 내는 바이며,  <br>
                     물방아 무한한 인생을 있다. 오직 아니더면, <br>
                     내려온 무한한 오아이스도 장식하는 설산에서 보라.</p>
             </div>
