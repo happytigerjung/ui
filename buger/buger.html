@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: fixed;
+            margin-top: 50px;
+        }
+        section{
+            width: 90%;
+        }
+        
+        .menu > ul{
+            margin: 0;   
+        }
+        .menu::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        ul{
+            float: right;
+        }
+        ul::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        li{
+            float: left;
+            padding-right: 40px;
+            padding-top: 0px;
+            
+        }
+
+        h2{
+            width: 30%;
+            margin: 0;
+            border: 0;
+        }
+        .mainimg{
+            width: 50%;
+        }
+        .maintext{
+            float: right;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h2>Gourmet au Catering</h2>
+            <ul>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <img src="./images/KakaoTalk_20201201_151935837.jpg" alt="">
+                <div>
+                    <h1>Le Catering</h1>
+
+                </div>
+            </div>
+        </section>
+        <!-- about 부분 -->
+        <section>
+            <div class="mainimg">
+                <img src="./images/KakaoTalk_20201201_151935131.jpg" alt="">
+            </div>
+            <div class="maintext">
+                <h1>About Catering</h1>
+                <h4>Tradition since </h4>
+                <p>The Catering was founded in blabla by Mr. 
+                    Smith in lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute iruredolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                    We only use seasonal ingredients.</p>
+            </div>
+        </section>
+        <!-- 메뉴 영역 -->
+        <section>
+            <div>
+                <h4>Our Menu</h4>
+                <h5>Bread Basket</h5>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h5>Honey Almond Granola with Fruits</h5>
+                <p>Natural cereal of honey toasted oats, 
+                raisins, almonds and dates 7.00</p>
+                <h5>Belgian Waffle</h5>    
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+                <h5>Scrambled eggs</h5>
+                <p>Scrambled eggs, roasted red pepper and garlic, 
+                with green onions 7.50</p>
+            
+            </div>
+            <div>
+                <img src="./images/KakaoTalk_20201201_151934608.jpg" alt="">
+            </div>
+        </section>
+        <!-- contact 영역 -->
+        <section>
+            <div>
+                <h4>Contact</h4>
+                <p>We offer full-service catering for any event, large or small. 
+                We understand your needs and we will cater the food to satisfy 
+                the biggerstcriteria of them all,
+                both look and taste. Do not hesitate to contact us.</p>
+                <h5>Catering Service, 42nd Living St, 43043 New York, NY</h5>
+                <p>You can also contact us 
+                by phone 00553123-2323 or email catering@catering.com, 
+                or you can send us a message here:</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>made by <span>jung</span></p>
+    </footer>
+    
+</body>
+</html>
