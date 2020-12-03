@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .res{
+            background-color: blue;
+            height: 50px;
+          
+        }
+
+        .res h3{
+            display: none;
+        }
+        .res h5{
+            display: none;
+        }
+
+        @media screen and (max-width: 1200px){
+            .res{background-color: rgb(209, 238, 130);}
+
+        }
+
+        @media screen and (max-width: 996px){
+            .res{background-color: violet;}
+            .res h1{display: none;}
+            .res h3{display: block;}
+
+        }
+
+        @media screen and (max-width: 768px){
+            .res{background-color: green;}
+
+            .res h1{display: none;}
+            .res h3{display: block;}
+
+        }
+
+         /* 화면 크기가 최대 567px 까지 */
+        @media screen and (max-width: 567px){
+            .res{background-color: teal;}
+
+            .res h1{display: none;}
+            .res h3{display: none;}
+            .res h5{display: block;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="res">
+        <h1 class="hideh1">화면의 크기가 작아지면 숨겨지는 h1</h1>
+        <h3 class="showh3">화면의 크기가 작아지면 출력되는 h3</h3>
+        <h5 class="showh5">화면의 크기가 더 작아지면 출력되는 h5</h5>
+    </div>
+    
+</body>
+</html>

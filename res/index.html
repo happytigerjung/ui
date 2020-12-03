@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 사이트</title>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>반응형 웹 사이트 예제</h1>
+    </header>
+
+    <!-- 반응형 웹 : 디바이스의 화면 크기에 따라 여러가지 화면으로 변경되는 웹사이트 구축방식
+    미디어 쿼리를 사용하여 화면 크기에 따라서 css 속성을 변경시켜 여러가지 화면 크기의 사이트를 구축 -->
+
+    <!-- 뷰포트: 웹페이지에서 사용자가 볼 수 있는 영역을 뜻함 -->
+    <!-- 디바이스에 따라서 뷰포트는 다르며 컴퓨터 보다 스마트폰 화면이 더 작음 -->
+    <!-- html5는 웹 디자이너가 meta 태그를 통해서 뷰포트를 설정할 수 있음 -->
+    <!-- <meta name="viewport" content="width=device-sidth,initial-scale=1.0"> -->
+    <!-- width=device-width: 디바이스의 화면 너비로 현재 사이트의 너비를 결정-->
+    <!-- initial-scale=1.0: 현재 화면의 확대/축소 수준, 1.0은 현재 화면의 크기를 100%로 사용함 -->
+
+
+    <!-- 미디어 쿼리: 반응형 웹 사이트를 제작하는데 필수적인 속성 -->
+    <!-- 지정한 화면 크기에 따라서 css 속성을 다르게 사용할 수 있음 -->
+    <!-- 미디어쿼리는 구형 브라우저에서는 동작하지 않을 수 있음 -->
+    <!-- 사용법
+         -@media not inly 미디어타입 and (미디어쿼리 적용 옵션){
+             css 코드
+            }  -->
+    <!-- not only:only는 지정한 css 형식대로 사용하겟다는 의미, not 지정한 css 형식의 반대로 사용 -->
+    <!-- 미디어 타입: all,print,screen,speech -->
+    <!-- all:기본값 모든 디바이스에 적용 -->
+    <!-- print:각종 프린트 디바이스 -->
+    <!-- screen:컴퓨터 모니터,테블릿 화면,스마트폰 화면 등 각종 디바이스 화면(all과 함꼐 가장 많이 사용) -->
+    <!-- speech:문자를 읽어주는 디바이스(TTS) -->
+    <!-- 미디어쿼리 적용 옵션: 주로 max-width, min-width 를 사용(웹사이트 제작은 screen,all을 주로 사용 ) -->
+    <!-- 각 디바이스 마다의 화면 설정 크기
+        -extra small: 576px 미만
+        -small: 576px 까지
+        -medium: 768px 까지
+        -large: 992px 까지
+        -extra large: 1200px 까지
+     -->
+
+    <main>
+        <aside class="col-3 col-s-3 menu">
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        </aside>
+
+        <section class="col-6 col-s-9">
+            <h1>메뉴 1</h1>
+            <p>안녕하세요 반갑습니다. 아이폰 입니다. 자바프로그래밍 수업중입니다.</p>
+        </section>
+
+        <aside class="col-3 col-s-12">
+            <div class="right">
+                <h2>개발 10년 강의 10년 명강사의 기초 </h2>
+                <p></p>
+                <h2>사이드바</h2>
+                <p>생명을 붙잡아 천지는 인생의 자신과 위하여서. 
+                     </p>
+                <h2>내용</h2>
+                <p>생명을 붙잡아 천지는 인생의 자신과 위 
+                     </p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>웹 브라우저의 크기를 변경하면 사이트의 모양이 변경됨</p>
+    </footer>
+    
+</body>
+</html>
